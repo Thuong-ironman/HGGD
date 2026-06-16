@@ -139,4 +139,4 @@ dmypy.json
 dataset/
 
 # checkoint 
-.HGGD_realsense_checkpoint
+/checkpoints/
