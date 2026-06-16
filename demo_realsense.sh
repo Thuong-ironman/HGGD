@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python demo.py \
+CUDA_VISIBLE_DEVICES=0 python demo_realsense.py \
 --center-num 48 \
 --anchor-num 7 \
 --anchor-k 6 \
@@ -13,6 +13,7 @@ CUDA_VISIBLE_DEVICES=0 python demo.py \
 --input-w 640 \
 --local-thres 0.01 \
 --heatmap-thres 0.01 \
---checkpoint './checkpoints/HGGD_realsense_checkpoint' \
---rgb-path './images/demo_rgb.png' \
---depth-path './images/demo_depth.png'
+--rs-width 1280 \
+--rs-height 720 \
+--rs-fps 30 \
+--checkpoint './checkpoints/HGGD_realsense_checkpoint'
