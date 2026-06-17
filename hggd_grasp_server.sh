@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Launch the HGGD grasp-detection worker (torch+CUDA + RealSense D435).
 # Run this in the conda env that has torch+CUDA+pytorch3d+pyrealsense2.
-#   conda activate hggd-cu128
-#   ./hggd_grasp_server.sh
+#   conda activate hggd-cu126
+#   ./checkpoints/hggd_grasp_server.sh
 set -e
 cd "$(dirname "$0")"
 CUDA_VISIBLE_DEVICES=0 python hggd_grasp_server.py \
