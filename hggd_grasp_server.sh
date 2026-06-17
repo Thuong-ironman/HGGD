@@ -6,7 +6,7 @@
 set -e
 cd "$(dirname "$0")"
 CUDA_VISIBLE_DEVICES=0 python hggd_grasp_server.py \
-  --checkpoint-path ./HGGD_realsense_checkpoint \
+  --checkpoint-path ./checkpoints/HGGD_realsense_checkpoint \
   --host 127.0.0.1 \
   --port 6000 \
   --frame-id camera_color_optical_frame \
